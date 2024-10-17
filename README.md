@@ -1,4 +1,4 @@
-# CaseVericode - Automação de Testes com Selenium, Java e Cucumber
+# CaseVericode - Automação de Testes com Selenium, C# e SPECFLOW
 
 Seja bem-vindo(a)!
 
