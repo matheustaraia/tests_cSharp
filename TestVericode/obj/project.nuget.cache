@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NUFXEtWM8Vw=",
+  "dgSpecHash": "o804MOb4pxs=",
   "success": true,
-  "projectFilePath": "C:\\teste vericode\\TestVericode\\TestVericode\\TestVericode.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\teste vericode\\TestVericode\\TestVericode\\TestVericode.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\anglesharp\\1.1.2\\anglesharp.1.1.2.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
@@ -48,6 +48,7 @@
     "C:\\Users\\mathe\\.nuget\\packages\\selenium.support\\4.25.0\\selenium.support.4.25.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\selenium.webdriver\\4.25.0\\selenium.webdriver.4.25.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\selenium.webdriver.chromedriver\\129.0.6668.10000\\selenium.webdriver.chromedriver.129.0.6668.10000.nupkg.sha512",
+    "C:\\Users\\mathe\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\specflow\\3.9.40\\specflow.3.9.40.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\specflow.internal.json\\1.0.8\\specflow.internal.json.1.0.8.nupkg.sha512",

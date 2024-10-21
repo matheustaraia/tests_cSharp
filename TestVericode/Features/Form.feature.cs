@@ -190,7 +190,7 @@ namespace TestVericode.Features
         testRunner.And("digito no campo Date of Birth a data \'07/09/1982\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 24
-        testRunner.And("clico na opcao \'Male\' no campo Gender", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+        testRunner.And("clico na opcao Male no campo Gender", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 25
         testRunner.And("seleciono a opcao \'Brazil\' no campo Country", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -205,7 +205,7 @@ namespace TestVericode.Features
         testRunner.And("no campo Occupation seleciono a opcao \'Employee\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 29
-        testRunner.And("seleciono \'Cliff Diving\' no campo Hobbies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+        testRunner.And("seleciono Cliff Diving no campo Hobbies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 30
         testRunner.When("clico em Next", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

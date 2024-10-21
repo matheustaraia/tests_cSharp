@@ -922,6 +922,18 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.0.0-beta2"
+        },
+        "compile": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "SharpZipLib/1.4.2": {
         "type": "package",
         "compile": {
@@ -3970,6 +3982,19 @@
         "nupkg-icon.png",
         "selenium.webdriver.chromedriver.129.0.6668.10000.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "sha512": "de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "type": "package",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll",
+        "seleniumextras.waithelpers.1.0.2.nupkg.sha512",
+        "seleniumextras.waithelpers.nuspec"
       ]
     },
     "SharpZipLib/1.4.2": {
@@ -8132,6 +8157,7 @@
       "Microsoft.NET.Test.Sdk >= 17.0.0",
       "Selenium.Support >= 4.25.0",
       "Selenium.WebDriver.ChromeDriver >= 129.0.6668.10000",
+      "SeleniumExtras.WaitHelpers >= 1.0.2",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
       "SpecFlow.xUnit >= 3.9.40",
       "System.Text.Json >= 8.0.5",
@@ -8147,11 +8173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\teste vericode\\TestVericode\\TestVericode\\TestVericode.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\teste vericode\\TestVericode\\TestVericode\\TestVericode.csproj",
       "projectName": "TestVericode",
-      "projectPath": "C:\\teste vericode\\TestVericode\\TestVericode\\TestVericode.csproj",
+      "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\teste vericode\\TestVericode\\TestVericode\\TestVericode.csproj",
       "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\teste vericode\\TestVericode\\TestVericode\\obj\\",
+      "outputPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\teste vericode\\TestVericode\\TestVericode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8205,6 +8231,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[129.0.6668.10000, )"
+          },
+          "SeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "SpecFlow.Plus.LivingDocPlugin": {
             "target": "Package",

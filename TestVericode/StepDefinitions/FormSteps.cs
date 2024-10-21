@@ -12,22 +12,30 @@ using System.Text.RegularExpressions;
 using System.Runtime.CompilerServices;
 using System.Reflection.Emit;
 using System.Diagnostics.Metrics;
+using TestVericode.Pages;
 
 namespace TestVericode.StepDefinitions
 {
     [Binding]
-    public class FormSteps : Reports
+    public sealed class FormSteps : Reports
     {
 
-        static IWebDriver driver { get; set; }
+        private IWebDriver driver;
+        private VehiclePage vehiclePage;
+        private InsurantPage insurantPage;
+
+        public FormSteps(IWebDriver driver)
+        {
+            this.driver = driver;
+            vehiclePage = new VehiclePage(driver);
+            insurantPage = new InsurantPage(driver);
+        }
+
+
         //TODO - adicionar o openbrowser no utility
         [Given(@"que eu acesso o site '(.*)'")]
         public void GivenQueEuAcessoOSite(string site)
         {
-            driver = new ChromeDriver();
-            driver.Manage().Window.Position = new Point(2000, 0);
-            driver.Manage().Window.Maximize();
-
             driver.Url = site;
             //Validação do título da página
             Assert.Equal("Enter Vehicle Data", driver.Title);
@@ -39,9 +47,7 @@ namespace TestVericode.StepDefinitions
         [Given(@"clico na opcao Automobile")]
         public void GivenEuValidoQueEstouNaPaginaEnterVehicleData()
         {
-            IWebElement element = driver.FindElement(By.Id("nav_automobile"));
-            element.Click();
-            Thread.Sleep(2000);
+            vehiclePage.SelectAutomobileOption();
         }
 
 
@@ -49,55 +55,53 @@ namespace TestVericode.StepDefinitions
         public void GivenSelecionoAOpcaoHonda(string marca)
         {
 
-            new SelectElement(driver.FindElement(By.Id("make"))).SelectByText(marca);
-            Thread.Sleep(2000);
-
+            vehiclePage.SelectMake(marca);
+            
         }
 
 
         [Given(@"digito no campo Engine Performance o valor '(.*)'")]
         public void GivenDigitoNoCampoEnginePerformanceOValor(string kw)
         {
-            IWebElement element = driver.FindElement(By.Id("engineperformance"));
-            element.SendKeys(kw);
-            Thread.Sleep(2000);
+            vehiclePage.EnterEnginePerformance(kw);            
         }
 
         [Given(@"digito no campo Date of Manufacture '(.*)'")]
         public void GivenDigitoNoCampoDateOfManufacture(string data)
         {
-            IWebElement element = driver.FindElement(By.Id("dateofmanufacture"));
-            element.SendKeys(data);
-            Thread.Sleep(2000);
+
+            vehiclePage.EnterDateOfManufacture(data);
+            
         }
 
         [Given(@"seleciono a opcao '(.*)' no campo Number of Seat")]
         public void GivenSelecionoAOpcaoNoCampoNumberOfSeat(string seats)
         {
-            new SelectElement(driver.FindElement(By.Id("numberofseats"))).SelectByText(seats);
-            Thread.Sleep(2000);
+
+            vehiclePage.SelectNumberOfSeats(seats);            
+            
         }
 
         [Given(@"seleciono a opcao '(.*)' no campo Fuel Type")]
         public void GivenSelecionoAOpcaoPetrolNoCampoFuelType(string fuel)
         {
-            new SelectElement(driver.FindElement(By.Id("fuel"))).SelectByText(fuel);
-            Thread.Sleep(2000);
+            
+            vehiclePage.SelectFuelType(fuel);
+            
         }
 
         [Given(@"digito no campo List Price o valor '(.*)'")]
         public void GivenDigitoNoCampoListPriceOValor(string listPrice)
         {
-            IWebElement element = driver.FindElement(By.Id("listprice"));
-            element.SendKeys(listPrice);
-            Thread.Sleep(2000);
+
+            vehiclePage.EnterListPrice(listPrice);                        
+            
         }
 
         [Given(@"digito no campo Annual Mileage o valor '(.*)'")]
         public void GivenDigitoNoCampoAnnualMileageOValor(string annualmileage)
         {
-            IWebElement element = driver.FindElement(By.Id("annualmileage"));
-            element.SendKeys(annualmileage);
+            vehiclePage.EnterAnnualMileage(annualmileage);
             Thread.Sleep(2000);
             addScreenShot(driver, "Cenario 01 complete");
         }
@@ -105,14 +109,13 @@ namespace TestVericode.StepDefinitions
         [When(@"clico no botao Next")]
         public void WhenClicoNoBotaoNext()
         {
-            IWebElement element = driver.FindElement(By.Id("nextenterinsurantdata"));
-            element.Click();
-            Thread.Sleep(2000);
+            vehiclePage.ClickNext();
         }
 
         [Then(@"sou redirecionado pra aba Enter Insurant Data")]
         public void ThenSouRedirecionadoPraAbaEnterInsurantData()
         {
+            Assert.Equal("Enter Insurant Data", driver.Title);
             addScreenShot(driver, "Cenario 01 aba Insurant Data");
         }
 
@@ -129,79 +132,78 @@ namespace TestVericode.StepDefinitions
         public void GivenDigitoNoCampoFirstNameONome(string firstname)
         {
 
-            IWebElement element = driver.FindElement(By.Id("firstname"));
-            element.SendKeys(firstname);
-            Thread.Sleep(2000);
+            insurantPage.EnterFirstName(firstname);
+
         }
 
         [Given(@"digito no campo Last Name o sobrenome '(.*)'")]
         public void GivenDigitoNoCampoLastNameOSobrenome(string lastname)
         {
-            IWebElement element = driver.FindElement(By.Id("lastname"));
-            element.SendKeys(lastname);
-            Thread.Sleep(2000);
+
+            insurantPage.EnterLastName(lastname);
+
         }
 
         [Given(@"digito no campo Date of Birth a data '(.*)'")]
         public void GivenDigitoNoCampoDateOfBirthAData(string birthdata)
         {
-            IWebElement element = driver.FindElement(By.Id("birthdate"));
-            element.SendKeys(birthdata);
-            Thread.Sleep(2000);
+
+            insurantPage.EnterDateOfBirth(birthdata);
+
         }
 
-        [Given(@"clico na opcao '(.*)' no campo Gender")]
-        public void GivenClicoNaOpcaoMaleNoCampoGender(string gender)
+        [Given(@"clico na opcao Male no campo Gender")]
+        public void GivenClicoNaOpcaoMaleNoCampoGender()
         {
-            IWebElement element = driver.FindElement(By.XPath("//label[@class='ideal-radiocheck-label'][contains(.,'" + gender + "')]"));
-            element.Click();
-            Thread.Sleep(2000);
+
+            insurantPage.SelectGenderMale();
+
         }
 
         [Given(@"seleciono a opcao '(.*)' no campo Country")]
         public void GivenSelecionoAOpcaoBrazilNoCampoCountry(string country)
         {
-            new SelectElement(driver.FindElement(By.Id("country"))).SelectByText(country);
-            Thread.Sleep(2000);
+
+            insurantPage.SelectCountry(country);
+
         }
 
         [Given(@"digito no campo Zip Code o cep '(.*)'")]
         public void GivenDigitoNoCampoZipCodeOCep(string zipcode)
         {
-            IWebElement element = driver.FindElement(By.Id("zipcode"));
-            element.SendKeys(zipcode);
-            Thread.Sleep(2000);
+
+            insurantPage.EnterZipCode(zipcode);
+
         }
 
         [Given(@"no campo City digito '(.*)'")]
         public void GivenNoCampoCityDigito(string cityname)
         {
-            IWebElement element = driver.FindElement(By.Id("city"));
-            element.SendKeys(cityname);
-            Thread.Sleep(2000);
+
+            insurantPage.EnterCity(cityname);
+
         }
 
         [Given(@"no campo Occupation seleciono a opcao '(.*)'")]
         public void GivenNoCampoOccupationSelecionoAOpcaoEmployee(string occupation)
         {
-            new SelectElement(driver.FindElement(By.Id("occupation"))).SelectByText(occupation);
-            Thread.Sleep(2000);
+
+            insurantPage.SelectOccupation(occupation);
+
         }
-        [Given(@"seleciono '([^']*)' no campo Hobbies")]
-        public void GivenSelecionoNoCampoHobbies(string hobbies)
+        [Given(@"seleciono Cliff Diving no campo Hobbies")]
+        public void GivenSelecionoNoCampoHobbies()
         {
-            IWebElement element = driver.FindElement(By.XPath("//label[@class='ideal-radiocheck-label'][contains(.,'" + hobbies + "')]"));
-            element.Click();
+            insurantPage.SelectHobbyCliffDiving();
             Thread.Sleep(2000);
-            addScreenShot(driver, "Cenario 02 complete");
+            addScreenShot(driver, "Cenario 02 complete" + DateTime.Now.ToString("yyyyddMM_HHmmss"));
         }
 
 
         [When(@"clico em Next")]
         public void WhenClicoEmNext()
         {
-            IWebElement element = driver.FindElement(By.Id("nextenterproductdata"));
-            element.Click();
+            insurantPage.ClickNext();
             Thread.Sleep(2000);
         }
 
@@ -209,10 +211,7 @@ namespace TestVericode.StepDefinitions
         public void ThenSouRedirecionadoParaAAbaEnterProductDataEFinalizoODrive()
         {
             Assert.Equal("Enter Product Data", driver.Title);
-            driver.Quit();
         }
-
-
 
     }
 }

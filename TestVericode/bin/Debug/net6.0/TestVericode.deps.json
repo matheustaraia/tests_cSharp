@@ -13,6 +13,7 @@
           "Microsoft.NET.Test.Sdk": "17.0.0",
           "Selenium.Support": "4.25.0",
           "Selenium.WebDriver.ChromeDriver": "129.0.6668.10000",
+          "SeleniumExtras.WaitHelpers": "1.0.2",
           "SpecFlow.Plus.LivingDocPlugin": "3.9.57",
           "SpecFlow.xUnit": "3.9.40",
           "System.Text.Json": "8.0.5",
@@ -674,6 +675,17 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/129.0.6668.10000": {},
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.25.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
       "SharpZipLib/1.4.2": {
         "runtime": {
           "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
@@ -1862,6 +1874,13 @@
       "sha512": "sha512-ITK8gxLEAlDIonktadjenCmaZooh0uxYcgkatfV6HnEEQIRnhHDvM9OhKvM1meaZpHc/DLVCTvK4HV4jSX08aA==",
       "path": "selenium.webdriver.chromedriver/129.0.6668.10000",
       "hashPath": "selenium.webdriver.chromedriver.129.0.6668.10000.nupkg.sha512"
+    },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "hashPath": "seleniumextras.waithelpers.1.0.2.nupkg.sha512"
     },
     "SharpZipLib/1.4.2": {
       "type": "package",

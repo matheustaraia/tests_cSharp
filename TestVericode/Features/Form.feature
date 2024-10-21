@@ -21,12 +21,12 @@ Feature: Tricentis
         And digito no campo First Name o nome 'Matheus'
         And digito no campo Last Name o sobrenome 'Rodrigues'
         And digito no campo Date of Birth a data '07/09/1982'
-        And clico na opcao 'Male' no campo Gender
+        And clico na opcao Male no campo Gender
         And seleciono a opcao 'Brazil' no campo Country
         And digito no campo Zip Code o cep '09050430'
         And no campo City digito 'Santo Andre'
         And no campo Occupation seleciono a opcao 'Employee'
-        And seleciono 'Cliff Diving' no campo Hobbies
+        And seleciono Cliff Diving no campo Hobbies
         When clico em Next
         Then sou redirecionado para a aba Enter Product Data e finalizo o drive
         

@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\teste vericode\\TestVericode\\",
+  "WorkspaceRootPath": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|c:\\teste vericode\\testvericode\\testvericode\\features\\form.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|c:\\users\\mathe\\onedrive\\\u00E1rea de trabalho\\teste vericode\\testvericode\\testvericode\\stepdefinitions\\formsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|solutionrelative:testvericode\\stepdefinitions\\formsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|c:\\users\\mathe\\onedrive\\\u00E1rea de trabalho\\teste vericode\\testvericode\\testvericode\\features\\form.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|solutionrelative:testvericode\\features\\form.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|c:\\teste vericode\\testvericode\\testvericode\\stepdefinitions\\formsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|solutionrelative:testvericode\\stepdefinitions\\formsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|c:\\users\\mathe\\onedrive\\\u00E1rea de trabalho\\teste vericode\\testvericode\\testvericode\\hooks\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|solutionrelative:testvericode\\hooks\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|c:\\users\\mathe\\onedrive\\\u00E1rea de trabalho\\teste vericode\\testvericode\\testvericode\\pages\\insurantpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|solutionrelative:testvericode\\pages\\insurantpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|c:\\users\\mathe\\onedrive\\\u00E1rea de trabalho\\teste vericode\\testvericode\\testvericode\\pages\\vehiclepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{659E302A-88EB-45B6-9DCC-C7FF016BFA27}|TestVericode\\TestVericode.csproj|solutionrelative:testvericode\\pages\\vehiclepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form.feature",
-              "DocumentMoniker": "C:\\teste vericode\\TestVericode\\TestVericode\\Features\\Form.feature",
-              "RelativeDocumentMoniker": "TestVericode\\Features\\Form.feature",
-              "ToolTip": "C:\\teste vericode\\TestVericode\\TestVericode\\Features\\Form.feature",
-              "RelativeToolTip": "TestVericode\\Features\\Form.feature",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAABPAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-10-16T22:29:29.946Z",
+              "DocumentIndex": 3,
+              "Title": "InsurantPage.cs",
+              "DocumentMoniker": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\Pages\\InsurantPage.cs",
+              "RelativeDocumentMoniker": "TestVericode\\Pages\\InsurantPage.cs",
+              "ToolTip": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\Pages\\InsurantPage.cs",
+              "RelativeToolTip": "TestVericode\\Pages\\InsurantPage.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCAAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T02:14:19.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VehiclePage.cs",
+              "DocumentMoniker": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\Pages\\VehiclePage.cs",
+              "RelativeDocumentMoniker": "TestVericode\\Pages\\VehiclePage.cs",
+              "ToolTip": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\Pages\\VehiclePage.cs",
+              "RelativeToolTip": "TestVericode\\Pages\\VehiclePage.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T03:07:34.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormSteps.cs",
-              "DocumentMoniker": "C:\\teste vericode\\TestVericode\\TestVericode\\StepDefinitions\\FormSteps.cs",
-              "RelativeDocumentMoniker": "TestVericode\\StepDefinitions\\FormSteps.cs",
-              "ToolTip": "C:\\teste vericode\\TestVericode\\TestVericode\\StepDefinitions\\FormSteps.cs",
-              "RelativeToolTip": "TestVericode\\StepDefinitions\\FormSteps.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAADwv8gAAAAlAAAAAAAAAA==",
+              "Title": "Form.feature",
+              "DocumentMoniker": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\Features\\Form.feature",
+              "RelativeDocumentMoniker": "TestVericode\\Features\\Form.feature",
+              "ToolTip": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\Features\\Form.feature",
+              "RelativeToolTip": "TestVericode\\Features\\Form.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVDhPdVNfSFNhFP/duznd5tRy5N2o1BwoCVJZD0FgulCIXiJqIyiCKIKeequnKGgQ\u002BBSBT770oNtDgv15CKKCGkRgD/WQZCqBcnfnarmcbtO72znfvddNqx/8zs537nd\u002B3znfdybhXxhXfJCwn7x24gb589AxjfOpvPhuwzCMrQIGMaFcInuDyAJOIqNE/EyMIZqaEBELFYG4Ukd2mHidl7WyC8VyCbIkC39NL3CYcROSNIyIqvNCFiETV4nX2Olu7MS78CS6Gzpxse0s3gxM0EmbZ92m0k9YviUQV5rI3iU6drqakFtfQat3D476D\u002BNkIIzVjTXqjvsTcBPv4WlQKNo9DhEbW7278br/MV5qb9H36jR\u002Bln4hmfmAH8WsuauCQ8iX99HvrN3CATaLqypG58bglBzQCkuCX3IzSBczYlMV\u002BHSRYwuISnSjjO/5BZFU0IviAyNU34ZYzy0MKsetiICXjS0wxybka8fD3hgGWo7BX9uMZtcOBOp2wUEVDSn9GOm9LzZbWGBjXm1C6aA7\u002Bko3LXfQacvrOSTDT/BgZhRdDSF0\u002BUI4k7wMj8MDtaBxBr2p0YKoljMriKRmyT7im/62Mg9fTT09tYyP2U94n5lC0K2I9qxkxhgns1M9SEGyz4gHecnPmS0ti0HyON34TU9rIQ3J6ENEm\u002BZFRYAxrvgpMkLeKSJP5nbwfyFC4/zcXG4XYCQCNdTJEeqRp/KCGRRIEa9QMle5ib8FbCQCgzSyL8hbJE7S1juIqmnxrQr/F4gH9lIVPeRNQdZVnFsy41sA/AGfbrS3fsL98AAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-10-20T03:39:41.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hooks.cs",
+              "DocumentMoniker": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\Hooks\\Hooks.cs",
+              "RelativeDocumentMoniker": "TestVericode\\Hooks\\Hooks.cs",
+              "ToolTip": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\Hooks\\Hooks.cs",
+              "RelativeToolTip": "TestVericode\\Hooks\\Hooks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T18:48:37.246Z",
+              "WhenOpened": "2024-10-20T03:38:34.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormSteps.cs",
+              "DocumentMoniker": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\StepDefinitions\\FormSteps.cs",
+              "RelativeDocumentMoniker": "TestVericode\\StepDefinitions\\FormSteps.cs",
+              "ToolTip": "C:\\Users\\mathe\\OneDrive\\\u00C1rea de Trabalho\\teste vericode\\TestVericode\\TestVericode\\StepDefinitions\\FormSteps.cs",
+              "RelativeToolTip": "TestVericode\\StepDefinitions\\FormSteps.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAwwMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T03:05:10.165Z",
               "EditorCaption": ""
             }
           ]
